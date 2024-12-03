@@ -15,6 +15,18 @@ vehicles["toy"] = "glider"
 
 # Update the Virago
 vehicles["virago"] = "Yamaha XV535"
+
+del vehicles['starfighter']
+# del vehicles["f1"]
+result = vehicles.pop("f1", None)
+print(result)
+plane = vehicles.pop("learjet")
+print(plane)
+
+bike = vehicles.pop("tenere", "not present")
+print(bike)
+print()
+
 # for key in vehicles:
 #     print(key, vehicles[key], sep=", ")
 for key, value in vehicles.items():
