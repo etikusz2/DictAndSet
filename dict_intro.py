@@ -9,6 +9,9 @@ vehicles = {
     'fiesta' : 'Ford Fiesta Ghia 1.4'
 }
 
+vehicles["starfighter"] = "LockheedF-104"
+vehicles["learjet"] = "Bombardier Learjet 75"
+vehicles["toy"] = "glider"
 # for key in vehicles:
 #     print(key, vehicles[key], sep=", ")
 for key, value in vehicles.items():
