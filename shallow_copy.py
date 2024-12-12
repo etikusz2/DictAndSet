@@ -1,3 +1,5 @@
+import copy
+
 animals = {
     "lion" : ["scary", "big", "cat"],
     "elephant" : ["big", "gray", "wrinkled"],
@@ -5,10 +7,14 @@ animals = {
 }
 
 # things = animals
-things = animals.copy()
-animals["teddy"] = "toy"
-print(things["teddy"])
-print(animals["teddy"])
+# Perform a shallow copy
+# things = animals.copy()
+
+# Perform a deep copy
+things = copy.deepcopy(animals)
+
+print(id(things["teddy"]), things["teddy"])
+print(id(animals["teddy"]), animals["teddy"])
 
 print()
 
